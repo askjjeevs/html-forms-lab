@@ -14,7 +14,7 @@
     </p>
     <h2>Melon Options</h2>
 
-    <p>Choose from one of these melons:</p>
+    Choose from one of these melons:
 
     <table>
         <tr>
@@ -32,30 +32,44 @@
     </table>
     <h2>Order Form</h2>
     <form>
-        <p>Your name</p>
+        <div>
+        Your name
         <input type="text" name="name">
-        <p>Who are we sending this to?</p>
+        </div>
+        <div>
+        Who are we sending this to?
         <input type="text" name="recipient">
+        </div>
+        <div>
         <p>Choose a melon</p>
         <select name="melon">
             <option value="watermelon">Watermelon</option>
             <option value="canteloupe">Canteloupe</option>
             <option value="honeydew">Honeydew</option>
         </select>
-        <p>When should we deliver?</p>
-        <input type="radio" name="time" value="morning" id="morning-time">
+        </div>
+        <div>
+        When should we deliver?
+        <input type="radio" name="time" value="am" id="morning-time">
         <label for="morning-time">Morning</label>
-        <input type="radio" name="time" value="evening" id="evening-time">
+        <input type="radio" name="time" value="pm" id="evening-time">
         <label for="evening-time">Evening</label>
-        <input type="radio" name="time" value="anytime" id="morning-time">
-        <label for="morning-time">Morning</label>
+        <input type="radio" name="time" value="any" id="any-time">
+        <label for="any-time">Any time</label>
+        </div>
+        <div>
+        <p><label for="message">Enter your message:</label></p>
+        <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+        Subscribe to our newsletter
+        <input type="checkbox" name="subscribe" value="yes" id="yes-subscribe">
+        <label for="yes-subscribe">Yes</label>
+        </div>
+        <div>
+        <button type="submit">submit form</button>
+        </div>
     </form>
 
-
-
-Enter your message:
-
-Subscribe to our newsletter
-Yes
     </body>
 </html>
